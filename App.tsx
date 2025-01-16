@@ -21,7 +21,7 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     flex: 1,
-    flexDirection:"column"
+    flexDirection:"column",
   };
   useEffect(() => {
     getData().then((result) => {
@@ -59,12 +59,12 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}
       >
-        {/* <Header /> */}
         <View
           style={[
             styles.container,
             {
               backgroundColor: isDarkMode ? Colors.black : Colors.white,
+    alignItems:"center"
             },
           ]}
         >
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     flexWrap: "wrap",
-    paddingHorizontal: 8,
+    justifyContent:'space-between'
   },
   text: {
     fontSize: 12,
@@ -111,9 +111,9 @@ const styles = StyleSheet.create({
     height: 40,
   },
   grid: {
+    padding:8,
     width:250,
-    maxWidth: "45%",
-    height: 100,
+    maxWidth: "47.5%",
     borderWidth:1,
     borderColor:"#f0f0f0"
   },
