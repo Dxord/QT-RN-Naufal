@@ -26,22 +26,24 @@ function App(): React.JSX.Element {
   useEffect(() => {
     getData().then((result) => {
       let data = result.data.users;
-      let oldest = data
-        .map((item: any) => item.age)
-        .sort((a: any, b: any) => b - a)
-        .slice(0, 10);
-      console.log("oldest", oldest);
-      let oldestTen = data.filter((item: { age: number }) => oldest.includes(item.age))
-      console.log(
-        "result oldestTen",
-        oldestTen
-      );
-      let heightData = oldestTen.filter((item: { height: number }) => item.height<170)
+      let heightData = data.filter((item: { height: number }) => item.height<170)
       console.log(
         "result heightData",
         heightData
       );
-      setData(oldestTen);
+      let oldest = heightData
+        .map((item: any) => item.age)
+        .sort((a: any, b: any) => b - a)
+        .slice(0, 10);
+      console.log("oldest", oldest);
+      
+      let oldestTen = heightData.filter((item: { age: number }) => oldest.includes(item.age))
+      console.log(
+        "result oldestTen",
+        oldestTen
+      );
+     
+      setData(oldestTen.slice(0, 10));
     });
   }, []);
   const getData = async () => {
