@@ -1,0 +1,7 @@
+# ninja log v5
+1	44	0	/Users/macbbook/Documents/QT-RN-Naufal/android/app/.cxx/Debug/5j3n135m/x86/CMakeFiles/cmake.verify_globs	13ff0da3f861f4a4
+0	13199	1736996178887014286	CMakeFiles/appmodules.dir/Users/macbbook/Documents/QT-RN-Naufal/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	2760e03a225589c8
+3	14864	1736996180542045997	CMakeFiles/appmodules.dir/OnLoad.cpp.o	2b26ed486f7bb5cd
+14864	15345	1736996181018797189	/Users/macbbook/Documents/QT-RN-Naufal/android/app/build/intermediates/cxx/Debug/5j3n135m/obj/x86/libappmodules.so	c4d4513588019145
+0	38	0	/Users/macbbook/Documents/QT-RN-Naufal/android/app/.cxx/Debug/5j3n135m/x86/CMakeFiles/cmake.verify_globs	13ff0da3f861f4a4
+1	38	0	/Users/macbbook/Documents/QT-RN-Naufal/android/app/.cxx/Debug/5j3n135m/x86/CMakeFiles/cmake.verify_globs	13ff0da3f861f4a4
